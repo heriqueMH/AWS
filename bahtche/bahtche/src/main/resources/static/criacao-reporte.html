@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Criar Reporte</title>
+  <link rel="stylesheet" href="css/cadastro.css" />
+  <link rel="stylesheet" href="css/static.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Criar Reporte</h2>
+    <div class="form-group">
+      <label for="titulo">Título</label>
+      <input type="text" id="titulo" placeholder="Título do problema" required />
+    </div>
+    <div class="form-group">
+      <label for="descricao">Descrição</label>
+      <input type="text" id="descricao" placeholder="Descreva o problema" required />
+    </div>
+    <div class="form-group">
+      <label for="categoria">Categoria</label>
+      <input type="text" id="categoria" placeholder="Ex: Buraco, Iluminação, etc." required />
+    </div>
+    <div class="form-group">
+      <label for="rua">Rua</label>
+      <input type="text" id="rua" placeholder="Rua do problema" required />
+    </div>
+    <div class="form-group">
+      <label for="numero">Número</label>
+      <input type="text" id="numero" placeholder="Número" required />
+    </div>
+    <div class="form-group">
+      <label for="cidade">Cidade</label>
+      <input type="text" id="cidade" placeholder="Cidade" required />
+    </div>
+    <div class="form-group">
+      <label for="estado">Estado</label>
+      <input type="text" id="estado" placeholder="Estado" required />
+    </div>
+    <div class="form-group">
+      <label for="cep">CEP</label>
+      <input type="text" id="cep" placeholder="CEP" required />
+    </div>
+
+    <button type="button" onclick="criarProblema()">Criar Reporte</button>
+  </div>
+
+  <button id="botao-tema" style="position: fixed; top: 10px; right: 10px; z-index: 999;">
+    🌙 Alternar Tema
+  </button>
+
+  <script src="js/tema.js"></script>
+  <script src="js/criacao-reporte.js"></script>
+  <script src="auth.js"></script>
+
+  <script>
+    verificarAutenticacao();
+  </script>
+</body>
+</html>

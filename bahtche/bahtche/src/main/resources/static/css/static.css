@@ -1,0 +1,77 @@
+
+/* ===== MODO ESCURO UNIFICADO - ALTO CONTRASTE HARMONIZADO ===== */
+
+body.modo-escuro {
+    background-color: #474747;
+    color: #f5f5f5;
+  }
+  
+  body.modo-escuro .container,
+  body.modo-escuro .card,
+  body.modo-escuro .formulario,
+  body.modo-escuro .painel-usuarios,
+  body.modo-escuro .relatorio-container,
+  body.modo-escuro .caixa-login,
+  body.modo-escuro form {
+    background-color: #1a1a1a;
+    border: 1px solid #666;
+  }
+  
+  body.modo-escuro .card-reporte,
+  body.modo-escuro table {
+    background-color: #474747;
+    color: #f5f5f5;
+    border: 1px solid #666;
+  }
+  
+  body.modo-escuro .card-reporte *,
+  body.modo-escuro th,
+  body.modo-escuro td {
+    color: #f0f0f0;
+    border-color: #555;
+  }
+  
+  body.modo-escuro th {
+    background-color: #333;
+    color: #ffffff;
+    border-bottom: 2px solid #555;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  body.modo-escuro td {
+    background-color: #474747;
+    padding: 6px;
+  }
+  
+  body.modo-escuro tr:nth-child(even) td {
+    background-color: #474747;
+  }
+  
+  body.modo-escuro input,
+  body.modo-escuro textarea,
+  body.modo-escuro select,
+  body.modo-escuro option {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border: 1px solid #555;
+  }
+  
+  body.modo-escuro .botao-acao,
+  body.modo-escuro button,
+  body.modo-escuro .exportar {
+    background-color: #3b82f6;
+    color: #ffffff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  body.modo-escuro .botao-acao:hover,
+  body.modo-escuro button:hover,
+  body.modo-escuro .exportar:hover {
+    background-color: #2563eb;
+  }
+  

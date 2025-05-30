@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista de Reportes</title>
+  <link rel="stylesheet" href="css/lista-admin.css" />
+  <link rel="stylesheet" href="css/static.css" />
+</head>
+<body>
+  <div class="painel">
+    <div class="cabecalho">
+      <h1>Lista de Reportes</h1>
+      <div class="acoes">
+        <button id="gerenciar-usuarios">Painel de Usuários</button>
+        <button id="btnRelatorio">Relatório de Alterações</button>
+        <button class="botao-sair" onclick="logout()">Sair</button>
+      </div>
+    </div>
+
+    <div class="filtros">
+      <select id="filtroBairro">
+        <option value="">Bairro</option>
+      </select>
+      <select id="filtroCategoria">
+        <option value="">Tipo de problema</option>
+      </select>
+      <select id="filtroStatus">
+        <option value="">Status do reporte</option>
+      </select>
+    </div>
+
+    <div id="tabelaProblemas" class="tabela"></div>
+  </div>
+
+  <button id="botao-tema" style="position: fixed; top: 10px; right: 10px; z-index: 999;">
+    🌙 Alternar Tema
+  </button>
+
+  <script src="js/tema.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/lista-admin.js"></script>
+</body>
+</html>

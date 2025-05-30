@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Meus Reportes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/lista-usuario.css" />
+  <link rel="stylesheet" href="css/static.css">
+</head>
+<body>
+  <div class="painel">
+    <div class="topo-painel">
+      <h1>Meus reportes</h1>
+      <div class="acoes">
+        <button class="botao-logout" onclick="logout()">Sair</button>
+      </div>
+    </div>
+
+    <button class="btn-novo-reporte" id="abrirModal">+ Novo reporte</button>
+    <div id="tabelaUsuarioProblemas" class="tabela"></div>
+
+    <div id="modalOverlay" class="modal-overlay">
+      <div class="modal">
+        <h2>Novo Reporte</h2>
+        <form id="formNovoReporte">
+          <input id="titulo" placeholder="Título" required />
+          <textarea id="descricao" placeholder="Descrição" required></textarea>
+          <input id="categoria" placeholder="Categoria" required />
+          <input id="bairro" placeholder="Bairro" required />
+          <input id="rua" placeholder="Rua" required />
+          <input id="numero" placeholder="Número" required />
+          <input id="cidade" placeholder="Cidade" required />
+          <input id="cep" placeholder="CEP" required />
+          <button type="submit">Enviar</button>
+          <button type="button" id="fecharModal">Cancelar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <button id="botao-tema" style="position: fixed; top: 10px; right: 10px; z-index: 999;">
+    🌙 Alternar Tema
+  </button>
+
+  <script src="js/tema.js"></script>
+  <script src="js/lista-usuario.js"></script>
+  <script src="auth.js"></script>
+</body>
+</html>

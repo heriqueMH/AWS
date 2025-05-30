@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Painel do Administrador</title>
+  <link rel="stylesheet" href="css/usuarios.css" />
+  <link rel="stylesheet" href="css/static.css">
+</head>
+<body>
+  <div class="painel">
+    <div class="cabecalho">
+    <h1>Painel do Administrador</h1>
+
+    <div class="botoes-linha">
+      <button id="lista-admin">Voltar</button>
+      <button class="botao-acao sair" onclick="logout()">Sair</button>
+    </div>
+    <div id="lista-usuarios"></div>
+  </div>
+  <button id="botao-tema" style="position: fixed; top: 10px; right: 10px; z-index: 999;">
+    🌙 Alternar Tema
+  </button>
+
+  <script src="js/tema.js"></script>
+  <script src="js/usuarios.js"></script>
+  <script src="auth.js"></script>
+  <script src="js/validacoes.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e9f2fb;
+  display: flex;
+  justify-content: center;
+  padding: 32px 0;
+  overflow-y: none;
+}
+
+.painel {
+  width: 1000px;
+  margin: 40px auto;
+  height: 775px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  overflow-y: auto;
+}
+
+.cabecalho {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.cabecalho h1 {
+  font-size: 22px;
+  color: #222;
+}
+
+.botoes-linha {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  gap: 10px;
+}
+
+#botao-tema{
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+td {
+  word-break: break-word;
+  white-space: normal;
+  max-width: 200px;
+}
+
+.tabela-usuarios {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.tabela-usuarios th {
+  background-color: #b9deff;
+  text-align: left;
+  padding: 12px 16px;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.tabela-usuarios td {
+  padding: 10px 16px;
+  border-top: 1px solid #ffffff;
+  vertical-align: middle;
+  color: #333;
+}
+
+.tabela-usuarios tr:hover {
+  background-color: #f7f7f7;
+}
+
+.acoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.acoes button {
+  min-width: 90px;
+  font-size: 13px;
+  padding: 5px 12px;
+}
+
+.acoes .desativar {
+  background-color: #ffe3e3;
+  color: #c62828;
+}
+
+.acoes .desativar:hover {
+  background-color: #fddcdc;
+}
+
+.acoes .promover {
+  background-color: #e1f7e1;
+  color: #2e7d32;
+}
+
+.acoes .promover:hover {
+  background-color: #d2edd2;
+}
+
+.acoes .rebaixar {
+  background-color: #fff0db;
+  color: #ef6c00;
+}
+
+.acoes .rebaixar:hover {
+  background-color: #ffe5c1;
+}

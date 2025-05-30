@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Criação de Comentário</title>
+  <link rel="stylesheet" href="css/criacao-comentario.css" />
+  <link rel="stylesheet" href="css/static.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Adicionar Comentário</h2>
+    <form id="comentarioForm">
+      <div class="form-group">
+        <label for="problemaId">ID do Problema</label>
+        <input type="number" id="problemaId" required />
+      </div>
+
+      <div class="form-group">
+        <label for="textoComentario">Comentário</label>
+        <textarea id="textoComentario" rows="4" required></textarea>
+      </div>
+
+      <button type="submit">Enviar Comentário</button>
+    </form>
+    <button onclick="logout()">Sair</button>
+  </div>
+
+  <button id="botao-tema" style="position: fixed; top: 10px; right: 10px; z-index: 999;">
+    🌙 Alternar Tema
+  </button>
+
+  <script src="js/tema.js"></script>
+  <script src="auth.js"></script>
+  <script src="criacao-comentario.js"></script>
+
+</body>
+</html>

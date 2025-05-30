@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e8f1fa;
+}
+
+.painel {
+  max-width: 1000px;
+  margin: 40px auto;
+  height: 775px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  overflow-y: auto;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #003366;
+  font-weight: 700;
+}
+
+#botao-tema{
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.acoes {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.acoes button,
+.botao-sair {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.acoes button:hover,
+.botao-sair:hover {
+  background-color: #005fd1;
+}
+
+.tabela {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.log-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: #f4f9ff;
+  border-left: 5px solid #007bff;
+  border-radius: 12px;
+  padding: 20px 24px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  min-height: 60px;
+}
+
+.log-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+.log-item h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #1d3557;
+}
+
+.log-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #444;
+}
+
+.filtros-relatorio {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.filtros-relatorio select,
+.filtros-relatorio input[type="date"] {
+  padding: 8px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: white;
+  color: #333;
+  min-width: 160px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: border-color 0.2s ease;
+}
+
+.filtros-relatorio select:focus,
+.filtros-relatorio input[type="date"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
