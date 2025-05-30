@@ -1,0 +1,69 @@
+GET — Buscar lista de usuários
+
+
+fetch("http://52.71.87.155/usuarios")
+    .then(res => res.json())
+    .then(data => console.log(data))
+    .catch(err => console.error("Erro no GET:"));
+
+
+===================================================================================================================
+
+POST — Criar novo usuário
+
+fetch("http://52.71.87.155/usuarios", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({
+    nome: "Teste",
+    email: "teste@example.com",
+    senha: "123456",
+    tipo: "CIDADÃO"
+  })
+})
+.then(res => res.json())
+.then(data => console.log("Criado:", data))
+.catch(err => console.error("Erro no POST:", err));
+
+
+===================================================================================================================
+
+PUT — Atualizar um usuário existente (por ID)
+
+
+fetch("http://52.71.87.155/usuarios/2/status?moderadorId=1", {
+  method: "PUT",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({ ativo: false })
+})
+.then(res => res.json())
+.then(data => console.log("Atualizado:", data))
+.catch(err => console.error("Erro no PUT:", err));
+
+===================================================================================================================
+
+DELETE — Deletar usuário por ID
+
+
+fetch("http://52.71.87.155/usuarios/3", {
+  method: "DELETE",
+})
+.then(res => {
+  if (res.ok) {
+    console.log("Usuário deletado com sucesso");
+  } else {
+    console.error("Erro ao deletar");
+  }
+})
+.catch(err => console.error("Erro no DELETE:", err));
+
+
+===================================================================================================================
+
+
+https://o5xu8k2ar8.execute-api.us-east-1.amazonaws.com/prod/report
+
