@@ -6,19 +6,19 @@ Dessa forma, promovendo melhorias na infraestrutura e na qualidade de vida da po
 
 
 ## Tecnologias
-- Backend: Java, Spring Boot \
-- Frontend: JavaScript, CSS, HTML \
-- Docker \
-- RDS - MySql \
-- Node.js (Lambda Runtime) \
-- AWS Lambda \
-- API Gateway (HTTP API) \
+- Backend: Java, Spring Boot 
+- Frontend: JavaScript, CSS, HTML 
+- Docker 
+- RDS - MySql 
+- Node.js (Lambda Runtime) 
+- AWS Lambda 
+- API Gateway (HTTP API) 
 
 
 ## EC2
-Sistema - linux - ubuntu 24.04 \
-Java 21 \
-Docker 26.1.3 \ 
+- Sistema - linux - ubuntu 24.04 
+- Java 21 
+- Docker 26.1.3 
 
 
 ## Rotas Disponíveis
@@ -29,25 +29,25 @@ Docker 26.1.3 \
 
 
 ## Membros do projeto 
-João Vitor - 10381778 \
-Caio Caramés - 10308718 \
-Matheus Henrique - 10409051 \
+- João Vitor - 10381778 
+- Caio Caramés - 10308718 
+- Matheus Henrique - 10409051 
 
 
 ## Deplay AWS
-- EC2 utilizada para hospedar backend e frontend. \
-- RDS com MySQL rodando em subnet privada. \
-- Lambda acessa API do backend via API Gateway. \
-- Segurança configurada via grupos de segurança da VPC. \
+- EC2 utilizada para hospedar backend e frontend. 
+- RDS com MySQL rodando em subnet privada. 
+- Lambda acessa API do backend via API Gateway. 
+- Segurança configurada via grupos de segurança da VPC. 
 
 
 ## Endpoint RDS privado
-db-proj.ceobz4w6p8z4.us-east-1.rds.amazonaws.com \
+- db-proj.ceobz4w6p8z4.us-east-1.rds.amazonaws.com 
 
 
 ## Lambda
-Lambda coleta dados de /problemas \
+- Lambda coleta dados de /problemas 
 
 
 ## Endpoint API Gateway
-https://o5xu8k2ar8.execute-api.us-east-1.amazonaws.com/prod/report \
+- https://o5xu8k2ar8.execute-api.us-east-1.amazonaws.com/prod/report 
