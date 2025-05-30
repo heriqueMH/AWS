@@ -22,10 +22,10 @@ Docker 26.1.3 \
 
 
 ## Rotas Disponíveis
-http://52.71.87.155/usuarios
-http://52.71.87.155/problemas
-http://52.71.87.155/comentarios
-http://52.71.87.155/logs
+- http://52.71.87.155/usuarios
+- http://52.71.87.155/problemas
+- http://52.71.87.155/comentarios
+- http://52.71.87.155/logs
 
 
 ## Membros do projeto 
