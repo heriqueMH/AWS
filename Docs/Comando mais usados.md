@@ -1,5 +1,4 @@
 ## 🐳 Docker
-
 ```bash
 docker ps                              # Contêineres rodando
 docker ps -a                           # Todos os contêineres
@@ -11,9 +10,7 @@ docker stop app-release3               # Parar contêiner
 docker rm app-release3                 # Remove contêiner
 docker rmi app-release3.0              # Remove imagem
 ```
-
 ## 🐧 Linux
-
 ```bash
 mkdir nome               # Cria uma pasta
 ls                       # Lista os arquivos
@@ -22,9 +19,7 @@ mv origem /destino       # Move
 mv nome novoNome         # Renomeia
 sudo comando             # Executa como root
 ```
-
 ## 🧰 Utilitários diversos
-
 ```bash
 curl http://52.71.87.155/                                                                                                            
 # Faz requisição HTTP
