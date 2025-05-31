@@ -1,15 +1,15 @@
 # Probleminhas Aqui
 #### Sistema Web de Reporte de Problemas Urbanos 
-Probleminhas Aqui é uma aplicação web que procura facilitar o reporte de problemos urbanos. \
-Permite aos moradores reportar problemas urbanos e acompanhar seu status de maneira fácil e organizada; e aos administradores - prefeitura ou responsáveis - visualizar e gerenciar as demandas com mais eficiência. \
-Dessa forma, promovendo melhorias na infraestrutura e na qualidade de vida da população. \
+Probleminhas Aqui é uma aplicação web que procura facilitar o reporte de problemos urbanos. 
+Permite aos moradores reportar problemas urbanos e acompanhar seu status de maneira fácil e organizada; e aos administradores - prefeitura ou responsáveis - visualizar e gerenciar as demandas com mais eficiência. 
+Dessa forma, promovendo melhorias na infraestrutura e na qualidade de vida da população. 
 
 
 ## Tecnologias
 - Backend: Java, Spring Boot 
 - Frontend: JavaScript, CSS, HTML 
 - Docker 
-- RDS - MySql 
+- RDS - MySql (Script Gerado pelo Spring)
 - Node.js (Lambda Runtime) 
 - AWS Lambda 
 - API Gateway (HTTP API) 
@@ -34,8 +34,8 @@ Dessa forma, promovendo melhorias na infraestrutura e na qualidade de vida da po
 - Matheus Henrique - 10409051 
 
 
-## Deplay AWS
-- EC2 utilizada para hospedar backend e frontend. 
+## Deploy AWS
+- EC2 utilizada para hospedar backend e frontend com Container. 
 - RDS com MySQL rodando em subnet privada. 
 - Lambda acessa API do backend via API Gateway. 
 - Segurança configurada via grupos de segurança da VPC. 
